@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RONELİ — Bir Takımın Anatomisi</title>
+  <meta name="description" content="RONELİ ısmarlama terzilik. Bir adamın ölçüsünden çalışan manşetin son çeyrek inçine kadar, zanaatın sekiz hareketi." />
+  <meta name="theme-color" content="#0a0a0b" />
+
+  <!-- Paylaşım önizlemesi -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RONELİ — Bir Takımın Anatomisi" />
+  <meta property="og:description" content="Bir adamın ölçüsünden çalışan manşetin son çeyrek inçine kadar, zanaatın sekiz hareketi." />
+  <meta property="og:image" content="https://roneli.vercel.app/assets/img/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"TailorShop","name":"RONELİ","url":"https://roneli.vercel.app/","telephone":"+905514834403","email":"ronelistudio@gmail.com","description":"RONELİ ısmarlama terzilik. Her takım tek bir kişi için kesilir."}
+  </script>
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <script>
+    /* Sayfa yenilenince tarayıcı eski kaydırma konumunu geri yüklemesin; animasyon her zaman başta açılsın */
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    window.addEventListener("load", function () {
+      if (!location.hash) window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    });
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#top" data-i18n="skip">İçeriğe geç</a>
+
+  <!-- ===== Yükleme ekranı ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    
+    <div class="loader__mark"><img src="assets/img/logo.png" alt="" /></div>
+    <div class="loader__bar"><span id="loaderFill"></span></div>
+    <div class="loader__pct"><span id="loaderPct">0</span><i>%</i></div>
+    <div class="loader__label" data-i18n="loader.label">Atölye hazırlanıyor</div>
+  </div>
+
+  <!-- ===== Üst menü ===== -->
+  <header class="site-header" id="header">
+    <a class="brand" href="#top" data-i18n-attr="aria-label:brand.aria">
+      
+      <img class="brand__mark" src="assets/img/logo.png" alt="" />
+      <span class="brand__word">RONELİ</span>
+    </a>
+    <div class="header-right">
+      <nav class="nav" data-i18n-attr="aria-label:nav.aria">
+        <a href="#atolye" data-i18n="nav.atelier">Atölye</a>
+        <a href="#koleksiyon" data-i18n="nav.collection">Koleksiyon</a>
+        <a href="#sss" data-i18n="nav.faq">SSS</a>
+        <a class="nav__cta" href="#randevu" data-i18n="nav.book">Prova Randevusu</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" data-i18n-attr="aria-label:menu.open">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#atolye" data-i18n="nav.atelier">Atölye</a>
+    <a href="#koleksiyon" data-i18n="nav.collection">Koleksiyon</a>
+    <a href="#sss" data-i18n="nav.faq">SSS</a>
+    <a href="#randevu" data-i18n="nav.book">Prova Randevusu</a>
+    <a href="#iletisim" data-i18n="footer.col4">İletişim</a>
+  </div>
+
+  <main id="top">
+    <!-- ===== Kaydırmalı sahne (sabitlenmiş tuval + editoryal paneller) ===== -->
+    <section class="scene" id="scene" data-i18n-attr="aria-label:scene.aria">
+      <div class="sticky" id="sticky">
+        <canvas id="frames" class="frames-canvas" role="img" data-i18n-attr="aria-label:canvas.aria"></canvas>
+
+        <div class="grade grade--vignette"></div>
+        <div class="grade grade--top"></div>
+        <div class="grade grade--bottom"></div>
+        <div class="grain"></div>
+
+        <div class="panel panel--hero" data-panel="hero">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Roneli · 1990'dan Beri Ölçüye Özel</p>
+          <h1 class="hero-title" data-i18n="hero.title">Bir Takımın<br><em>Anatomisi</em></h1>
+          <div class="scroll-cue"><span></span><small data-i18n="hero.scroll">Kaydır</small></div>
+        </div>
+
+        <article class="panel panel--left" data-panel="1">
+          <span class="panel__index">01</span>
+          <p class="panel__kicker" data-i18n="p1.kicker">Temel</p>
+          <h2 class="panel__title" data-i18n="p1.title">Saf Pamuktan<br>Bir Gömlek</h2>
+          <p class="panel__spec" data-i18n="p1.spec"><i>Kumaş</i> Mısır İki Katlı Poplin · 120s</p>
+        </article>
+
+        <article class="panel panel--right panel--lower" data-panel="2">
+          <span class="panel__index">02</span>
+          <p class="panel__kicker" data-i18n="p2.kicker">Yelek</p>
+          <h2 class="panel__title" data-i18n="p2.title">Yapı,<br>Sıkıca Tutulmuş</h2>
+          <p class="panel__body" data-i18n="p2.body">Yelek, vücudun çizgisini içe doğru çeker. Beş düğme, ipek astarlı arka bölüm ve kravatın düşüp asla bükülmemesi için çapraz kesilmiş bağ.</p>
+          <p class="panel__spec" data-i18n="p2.spec"><i>İpek</i> Dut İpeği, Como'da Dokunmuş</p>
+        </article>
+
+        <article class="panel panel--left" data-panel="3">
+          <span class="panel__index">03</span>
+          <p class="panel__kicker" data-i18n="p3.kicker">Gizli Katman</p>
+          <h2 class="panel__title" data-i18n="p3.title">Görünmez<br>İskelet</h2>
+          <p class="panel__body" data-i18n="p3.body">Ceketin içinde gizli duran iç yapı, omuzların ve göğsün doğal durmasını sağlar. Her parça elle dikilir; makine yalnızca kenarları tamamlar.</p>
+          <p class="panel__spec" data-i18n="p3.spec"><i>Yapı</i> Elle Şekillendirilmiş İç Yapı</p>
+        </article>
+
+        <article class="panel panel--right" data-panel="4">
+          <span class="panel__index">04</span>
+          <p class="panel__kicker" data-i18n="p4.kicker">Kesim</p>
+          <h2 class="panel__title" data-i18n="p4.title">Eksiksiz<br>Siluet</h2>
+          <p class="panel__spec" data-i18n="p4.spec"><i>Kumaş</i> Super 150's Merino · 240g</p>
+        </article>
+
+        <article class="panel panel--left" data-panel="5">
+          <span class="panel__index">05</span>
+          <p class="panel__kicker" data-i18n="p5.kicker">Adam</p>
+          <h2 class="panel__title" data-i18n="p5.title">Giyilmek<br>İçin Yapılmış</h2>
+          <p class="panel__spec" data-i18n="p5.spec"><i>Kalıp</i> Kişiye Özel Ölçüyle Üretilmiş</p>
+        </article>
+
+        <article class="panel panel--right" data-panel="6">
+          <span class="panel__index">06</span>
+          <p class="panel__kicker" data-i18n="p6.kicker">Geçit Töreni</p>
+          <h2 class="panel__title" data-i18n="p6.title">Bir Renk<br>Dili</h2>
+          <p class="panel__spec" data-i18n="p6.spec"><i>Palet</i> Dört İmza Tonu</p>
+        </article>
+
+        <article class="panel panel--left" data-panel="7">
+          <span class="panel__index">07</span>
+          <p class="panel__kicker" data-i18n="p7.kicker">Detay</p>
+          <h2 class="panel__title" data-i18n="p7.title">Son<br>Çeyrek İnç</h2>
+          <p class="panel__body" data-i18n="p7.body">Çalışan cerrah manşetleri. Her biri elle düğmelenmiş boynuz düğmeler. Yalnızca dokunarak fark edilebilecek dikişler.</p>
+          <p class="panel__spec" data-i18n="p7.spec"><i>Bitiş</i> Çalışan Cerrah Manşetleri</p>
+        </article>
+
+        <div class="scene-count" aria-hidden="true"><span id="movementNo">00</span><i>/ 07</i></div>
+      </div>
+    </section>
+
+    <!-- ===== Atölye ===== -->
+    <section class="atelier" id="atolye" aria-labelledby="atolyeBaslik">
+      <p class="eyebrow eyebrow--center" data-i18n="atelier.eyebrow">Atölye</p>
+      <h2 class="section-title" id="atolyeBaslik" data-i18n="atelier.title">Her dikiş bir<br><em>sabır işi.</em></h2>
+      <p class="section-lead" data-i18n="atelier.lead">Roneli'de her takım tek bir kişi için, tek bir ölçü alınarak kesilir. Kesim, dikiş ve son kontrol aynı eller tarafından yapılır.</p>
+      <ul class="stats">
+        <li><strong>35+</strong><span data-i18n="atelier.stat1">Yıllık zanaat</span></li>
+        <li><strong>180</strong><span data-i18n="atelier.stat2">Dikişte elde işçilik</span></li>
+        <li><strong>3</strong><span data-i18n="atelier.stat3">Provada son ayar</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== Koleksiyon ===== -->
+    <section class="collection" id="koleksiyon" aria-labelledby="koleksiyonBaslik">
+      <p class="eyebrow eyebrow--center" data-i18n="collection.eyebrow">Koleksiyon</p>
+      <h2 class="section-title" id="koleksiyonBaslik" data-i18n="collection.title">Seçilmiş<br><em>parçalar.</em></h2>
+      <div class="cards">
+        <article class="card">
+          <span class="card__no">I</span>
+          <h3 data-i18n="card1.title">Takım</h3>
+          <p data-i18n="card1.body">Tek parça kesim, eksiksiz iç yapı. Her ölçüye göre yeniden çizilir.</p>
+        </article>
+        <article class="card">
+          <span class="card__no">II</span>
+          <h3 data-i18n="card2.title">Gömlek</h3>
+          <p data-i18n="card2.body">Mısır pamuğu poplin, işlemeli manşet ve elle takılmış düğmeler.</p>
+        </article>
+        <article class="card">
+          <span class="card__no">III</span>
+          <h3 data-i18n="card3.title">Aksesuar</h3>
+          <p data-i18n="card3.body">İpek kravat, boynuz düğme ve deri kemer. Takımın son dokunuşu.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Sıkça Sorulan Sorular ===== -->
+    <section class="faq" id="sss" aria-labelledby="sssBaslik">
+      <p class="eyebrow eyebrow--center" data-i18n="faq.eyebrow">Sıkça Sorulan Sorular</p>
+      <h2 class="section-title" id="sssBaslik" data-i18n="faq.title">Merak edilenler<br><em>ve cevapları.</em></h2>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary data-i18n="faq.q1">Bir takım için kaç prova gerekir?</summary>
+          <p data-i18n="faq.a1">Çoğu takım üç provada tamamlanır: ilk ölçüden sonra kalıp provası, ara prova ve son prova. Her provada ayar, yalnızca sizin duruşunuza göre yapılır.</p>
+        </details>
+        <details class="faq__item">
+          <summary data-i18n="faq.q2">Teslim süresi ne kadar?</summary>
+          <p data-i18n="faq.a2">Süre; seçilen kumaşa, işçiliğe ve provaların takvimine göre değişir. Tahmini tarih, randevuda kesin olarak paylaşılır.</p>
+        </details>
+        <details class="faq__item">
+          <summary data-i18n="faq.q3">Fiyatlar nasıl belirleniyor?</summary>
+          <p data-i18n="faq.a3">Her parça kişiye özel hazırlandığı için fiyat; kumaş, yapı ve detaylara göre teklif edilir. Net bir fiyat, ilk görüşmede yazılı olarak paylaşılır.</p>
+        </details>
+        <details class="faq__item">
+          <summary data-i18n="faq.q4">İlk randevuda neler olur?</summary>
+          <p data-i18n="faq.a4">Bir sohbetle başlarız: ne için giyeceğinizi, tarzınızı ve günlük yaşamınızı konuşuruz. Ardından ölçünüz alınır ve kumaş seçimine geçilir.</p>
+        </details>
+        <details class="faq__item">
+          <summary data-i18n="faq.q5">Şehir dışındaysam ya da yurt dışındaysam sipariş verebilir miyim?</summary>
+          <p data-i18n="faq.a5">Evet. Ön görüşmeyi görüntülü yapabilir, ölçünüzü ise size gönderilecek yönergelerle alabilirsiniz.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== Randevu / CTA ===== -->
+    <section class="outro" id="randevu">
+      
+      <p class="eyebrow eyebrow--center" data-i18n="outro.eyebrow">Moda Evi</p>
+      <h2 class="outro__title" data-i18n="outro.title">Az Sayıdakiler<br>için terzilik.</h2>
+      <p class="outro__body" data-i18n="outro.body">Her Roneli takımı yalnızca bir adam için kesilir. Bir sohbet, bir ölçü ve yalnızca sizin için seçilmiş tek bir kumaş topu ile başlayın.</p>
+
+      <form class="booking" id="bookingForm" action="https://formspree.io/f/mnppkyyr" method="POST" novalidate>
+        <label><span data-i18n="form.name">Ad Soyad</span> <input type="text" name="ad" required autocomplete="name" /></label>
+        <label><span data-i18n="form.email">E-posta</span> <input type="email" name="eposta" required autocomplete="email" /></label>
+        <label><span data-i18n="form.phone">Telefon</span> <input type="tel" name="telefon" required autocomplete="tel" inputmode="numeric" maxlength="11" /></label>
+        <label><span data-i18n="form.date">Tercih edilen tarih</span> <input type="date" name="tarih" required /></label>
+        <label class="booking__full"><span data-i18n="form.time">Tercih edilen saat</span>
+          <select name="saat" required>
+            <option value="" data-i18n="form.time.ph">Saat seçin</option>
+            <option value="Sabah 10:00-12:00" data-i18n="form.time.am">Sabah · 10:00 – 12:00</option>
+            <option value="Öğle 12:00-15:00" data-i18n="form.time.noon">Öğle · 12:00 – 15:00</option>
+            <option value="Öğleden sonra 15:00-18:00" data-i18n="form.time.pm">Öğleden sonra · 15:00 – 18:00</option>
+          </select>
+        </label>
+        <label class="booking__full"><span data-i18n="form.note">Notunuz (isteğe bağlı)</span>
+          <textarea name="not" rows="3" data-i18n-attr="placeholder:form.notePh" placeholder="Ölçü, etkinlik tarihi veya özel isteğiniz"></textarea>
+        </label>
+        <label class="consent"><input type="checkbox" name="kvkk" required /> <span data-i18n="form.consent">Kişisel verilerimin <a href="gizlilik.html" target="_blank" rel="noopener">aydınlatma metni</a> kapsamında işlenmesini kabul ediyorum.</span></label>
+        <input type="hidden" name="_subject" value="Yeni prova randevusu talebi" />
+        <button class="btn" type="submit" data-i18n="form.submit">Özel Prova Randevusu Al</button>
+        <p class="booking__msg" id="bookingMsg" role="status" aria-live="polite"></p>
+      </form>
+
+      <footer class="site-footer">
+        <div class="foot-brand-col">
+          <div class="foot-brand">
+            
+            <img src="assets/img/logo.png" alt="" />
+            <span>RONELİ</span>
+          </div>
+          <p class="foot-tagline" data-i18n="footer.tagline">Ölçüye özel terzilik.</p>
+          <a class="btn btn--small" href="#randevu" data-i18n="footer.cta">Prova Randevusu</a>
+        </div>
+
+        <div class="foot-col">
+          <h4 data-i18n="footer.col1">Keşfet</h4>
+          <a href="#atolye" data-i18n="nav.atelier">Atölye</a>
+          <a href="#scene" data-i18n="footer.process">Dikim süreci</a>
+          <a href="#koleksiyon" data-i18n="nav.collection">Koleksiyon</a>
+        </div>
+
+        <div class="foot-col">
+          <h4 data-i18n="footer.col2">Koleksiyon</h4>
+          <a href="#koleksiyon" data-i18n="footer.suit">Takım</a>
+          <a href="#koleksiyon" data-i18n="footer.shirt">Gömlek</a>
+          <a href="#koleksiyon" data-i18n="footer.accessories">Aksesuar</a>
+        </div>
+
+        <div class="foot-col">
+          <h4 data-i18n="footer.col3">Ziyaret</h4>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Mayfair+London" target="_blank" rel="noopener" data-i18n="footer.location">Mayfair · Londra</a>
+          <a href="#randevu" data-i18n="footer.byAppt">Randevu ile</a>
+          <a href="#randevu" data-i18n="nav.book">Prova Randevusu</a>
+        </div>
+
+        <div class="foot-col" id="iletisim">
+          <h4 data-i18n="footer.col4">İletişim</h4>
+          <a id="mailLink" href="#iletisim" target="_blank" rel="noopener" data-i18n="footer.mail">E-posta</a>
+          <a id="whatsappLink" href="#iletisim" target="_blank" rel="noopener" data-i18n="footer.whatsapp">WhatsApp</a>
+        </div>
+
+        <div class="foot-bottom">
+          <p class="foot-legal" data-i18n="footer.legal">© <span id="year"></span> Roneli Bespoke — Elde yapılmış, bir ömür için.</p>
+          <a class="foot-privacy" href="gizlilik.html" data-i18n="footer.privacy">Gizlilik · KVKK</a>
+          <label class="lang">
+            <span class="sr-only" data-i18n="footer.langLabel">Dil</span>
+            <select id="langSelect">
+              <option value="tr">Türkçe</option>
+              <option value="en">English</option>
+              <option value="ar">العربية</option>
+            </select>
+          </label>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <a class="wa-float" id="waFloat" href="#iletisim" target="_blank" rel="noopener" data-i18n-attr="aria-label:wa.aria;title:wa.aria">
+    <svg viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/i18n.js?v=8"></script>
+  <script src="assets/js/app.js?v=5"></script>
+  <script src="assets/js/extras.js?v=5"></script>
+</body>
+</html>
